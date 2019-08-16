@@ -13,7 +13,6 @@ a= 2.999999999999999 # 15 decimales
 b= 2.999999999999998 # 15 decimales
 c= a-b
 
-print c
 
 lista1=[] # Lista que contendra los valores de ambos numeros y su resta
 
@@ -23,12 +22,12 @@ lista1.append(a)
 lista1.append(b)
 lista1.append(c)
 
-print lista1 
 
 # En este caso no hay perdida de significancia
 cols= range(3)
 plt.title("a-b=1.33226762955e-15/a=2.999999999999999/b=2.999999999999998")
 plt.plot(cols,lista1,'o')
+plt.xlabel("CASO SIN PERDIDA DE SIGNIFICANCIA")
 plt.show()
 
 d= 2.9999999999999999 # 16 decimales
@@ -43,9 +42,10 @@ lista2.append(d)
 lista2.append(e)
 lista2.append(f)
 
+
 # Caso con perdida de significancia
-plt.title("a-b=/a=/b=")
+plt.title("a-b=2.9999999999999999/a=2.9999999999999998/b=0")
+plt.xlabel("CASO CON PERDIDA DE SIGNIFICANCIA")
 plt.plot(cols,lista2,'o')
 plt.show()
 
-# 
