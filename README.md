@@ -12,12 +12,12 @@ Este ejemplo
 
 Se ejemplifican dos casos, en los que se restan dos numeros parecidos pero no iguales, y dependiendo de la cantidad de decimales que tienen los numeros, se proboca o no perdida de significancia.
 
-Caso perdida sin perdida de significancia:
+Caso sin perdida de significancia (Numeros con 15 decimales):
 
 Numero1=
 Numero2=
 
-Caso con perdida de significancia:
+Caso con perdida de significancia (Numeros con 16 decimales):
 
 Numero1=
 Numero2=
@@ -31,4 +31,4 @@ Se define el error relativo como
 
 	ERROR = (Promedio_Calculado - Resultado_Exacto) / Resultado_Exacto
 
-Para el caso de nu
+Para el caso con numeros con 15 decimales, el computador calculó la resta correctamente, en cambio para el caso con los numeros de 16 decimales, la resta se aproximó a 0, provocandose una perdida de significancia.
