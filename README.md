@@ -4,17 +4,24 @@ Proyecto 0, Metodos Computacionales en IOC
 Introducción
 ==============
 
-# Cuando se  restan dos numeros parecidos pero no iguales, si 
-# sus decimales son 15, no hay perdida de significancia,  y el
-# programa entregará la solución correctamente, pero si son mas de
-# 15 decimales se probocara perdida de significancia
-
+Cuando se restan dos numeros que son parecidos, pero no iguales, dependiendo de la cantidad de decimales que tengan los numeros, se puede probocar o no perdida de significancia. En este codigo se presenta un ejemplo sobre este caso, mostrando cual es el limite de decimales que tiene que tener un numero de tal forma de que se provoque una perdida de significancia o no
 
 
 Este ejemplo
 ==============
 
+Se ejemplifican dos casos, en los que se restan dos numeros parecidos pero no iguales, y dependiendo de la cantidad de decimales que tienen los numeros, se proboca o no perdida de significancia.
 
+Caso perdida sin perdida de significancia:
+
+Numero1=
+Numero2=
+
+Caso con perdida de significancia:
+
+Numero1=
+Numero2=
+Valor Resta=
 
 
 Resultados
@@ -23,3 +30,5 @@ Resultados
 Se define el error relativo como 
 
 	ERROR = (Promedio_Calculado - Resultado_Exacto) / Resultado_Exacto
+
+Para el caso de nu
