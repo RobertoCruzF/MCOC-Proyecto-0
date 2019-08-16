@@ -14,14 +14,14 @@ Se ejemplifican dos casos, en los que se restan dos numeros parecidos pero no ig
 
 Caso sin perdida de significancia (Numeros con 15 decimales):
 
-Numero1=
-Numero2=
+Numero1:2.999999999999999
+Numero2:2.999999999999998
 
 Caso con perdida de significancia (Numeros con 16 decimales):
 
-Numero1=
-Numero2=
-Valor Resta=
+Numero1:2.9999999999999999
+Numero2:2.9999999999999998
+
 
 
 Resultados
@@ -32,3 +32,15 @@ Se define el error relativo como
 	ERROR = (Promedio_Calculado - Resultado_Exacto) / Resultado_Exacto
 
 Para el caso con numeros con 15 decimales, el computador calculó la resta correctamente, en cambio para el caso con los numeros de 16 decimales, la resta se aproximó a 0, provocandose una perdida de significancia.
+
+Caso sin perdida de significancia (Numeros con 15 decimales):
+
+Numero1: 2.999999999999999
+Numero2: 2.999999999999998
+Numero1 - Numero2: 1.33226762955e-15
+
+Caso con perdida de significancia (Numeros con 16 decimales):
+
+Numero1: 2.9999999999999999
+Numero2: 2.9999999999999998
+Numero1 - Numero2: 0.0
